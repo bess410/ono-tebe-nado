@@ -1,1 +1,52 @@
-/* место для вашего кода */
+/* TODO потом удалить */
+.header,
+.about,
+.lots,
+.cover,
+.footer {
+  border: 1px solid black;
+  /* width: 1440px; */
+}
+
+body {
+  /* TODO потом удалить */
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 92px 50px;
+  /* TODO Потом удалить height */
+  height: 293px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+  padding-bottom: 90px;
+}
+
+.cover {
+  /* TODO потом удалить height */
+  height: 757px;
+}
+
+.lots {
+  padding: 0 50px;
+  /* TODO потом удалить height */
+  height: 579px;
+}
+
+.about {
+  padding: 0 50px;
+  /* TODO потом удалить height */
+  height: 487px;
+}
+
+.footer {
+  padding: 90px 50px;
+  /* TODO потом удалить height */
+  height: 277px;
+}
+

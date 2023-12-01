@@ -1,5 +1,4 @@
 /* TODO потом удалить */
-.header,
 .about,
 .lots,
 .cover,
@@ -15,9 +14,12 @@ body {
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 92px 50px;
-  /* TODO Потом удалить height */
-  height: 293px;
+  font-size: 18px;
+  text-underline-position: under;
 }
 
 .main {
@@ -50,3 +52,27 @@ body {
   height: 277px;
 }
 
+.header__logo {
+  width: 286px;
+}
+
+.header__links-list {
+  list-style: circle;
+  display: flex;
+  gap: 32px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__logo-image {
+  display: block;
+  width: 138px;
+}
+
+.header__address {
+  flex-basis: 240px;
+  line-height: 135%;
+  font-style: normal;
+}

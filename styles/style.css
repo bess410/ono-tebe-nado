@@ -1,7 +1,6 @@
 /* TODO потом удалить */
 .about,
 .lots,
-.cover,
 .footer {
   border: 1px solid black;
   /* width: 1440px; */
@@ -13,6 +12,33 @@ body {
   margin: 0 auto;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 180px;
+  padding-bottom: 90px;
+}
+
+.lots {
+  /* TODO потом удалить height */
+  height: 579px;
+  padding: 0 50px;
+}
+
+.about {
+  /* TODO потом удалить height */
+  height: 487px;
+  padding: 0 50px;
+}
+
+.footer {
+  /* TODO потом удалить height */
+  height: 277px;
+  padding: 90px 50px;
+}
+
+/* Header */
+
 .header {
   display: grid;
   grid-template-columns: 1fr 138px 1fr;
@@ -22,40 +48,10 @@ body {
   text-underline-position: under;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  gap: 180px;
-  padding-bottom: 90px;
-}
-
-.cover {
-  /* TODO потом удалить height */
-  height: 757px;
-}
-
-.lots {
-  padding: 0 50px;
-  /* TODO потом удалить height */
-  height: 579px;
-}
-
-.about {
-  padding: 0 50px;
-  /* TODO потом удалить height */
-  height: 487px;
-}
-
-.footer {
-  padding: 90px 50px;
-  /* TODO потом удалить height */
-  height: 277px;
-}
-
 .header__links-list {
-  list-style: circle;
   display: flex;
   gap: 32px;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
@@ -69,6 +65,85 @@ body {
 
 .header__address {
   justify-self: end;
-  line-height: 135%;
   font-style: normal;
+  line-height: 135%;
+}
+
+/* Cover */
+
+.cover {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 52px;
+  gap: 134px;
+  padding: 165px 50px 50px;
+  color: #fff;
+  text-transform: uppercase;
+  background: url("../images/cover.jpg") center / cover;
+}
+
+.cover__title {
+  z-index: 1;
+  font-size: 100px;
+  letter-spacing: 30px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.aligned-text {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 115%;
+}
+
+.aligned-text_center {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.aligned-text_right {
+  display: block;
+  line-height: 100%;
+  text-align: right;
+}
+
+.cover__description {
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 257px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 83px;
+}
+
+.cover__description-text {
+  justify-self: end;
+  font-weight: normal;
+  font-size: 22px;
+  letter-spacing: 0;
+  word-spacing: 17px;
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background: #000;
 }

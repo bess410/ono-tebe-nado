@@ -1,11 +1,4 @@
-/* TODO потом удалить */
-.footer {
-  border: 1px solid black;
-  /* width: 1440px; */
-}
-
 body {
-  /* TODO потом удалить */
   width: 1440px;
   margin: 0 auto;
   text-underline-position: under;
@@ -18,17 +11,11 @@ body {
   padding-bottom: 90px;
 }
 
-.footer {
-  /* TODO потом удалить height */
-  height: 277px;
-  padding: 90px 50px;
-}
-
 /* Header */
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 138px 1fr;
+  grid-template-columns: 1fr 148px 1fr;
   align-items: center;
   padding: 92px 50px;
   font-size: 18px;
@@ -44,9 +31,14 @@ body {
   list-style: none;
 }
 
-.header__logo-image {
+.header__logo {
   display: block;
-  width: 138px;
+  width: 148px;
+  padding: 0 5px;
+}
+
+.header__logo-image {
+  height: 100%;
 }
 
 .header__address {
@@ -154,8 +146,8 @@ body {
 }
 
 .lots__card-list-item {
-  flex-basis: 430px;
   flex-grow: 1;
+  flex-basis: 430px;
   min-height: 450px;
   background: black;
 }
@@ -198,28 +190,26 @@ body {
 }
 
 .card_type_film {
-  background: url("../images/card-lot-01.jpg") center / cover;
   inset: 0;
+  background: url("../images/card-lot-01.jpg") center / cover;
 }
 
 .card_type_book {
-  background: url("../images/card-lot-02.jpg") center / cover;
   inset: 0;
+  background: url("../images/card-lot-02.jpg") center / cover;
 }
 
 .card_type_picture {
-  background: url("../images/card-lot-03.jpg") center / cover;
   inset: 0;
+  background: url("../images/card-lot-03.jpg") center / cover;
 }
 
 /* About */
 
 .about {
-  /* TODO потом удалить height */
-  height: 487px;
   display: grid;
-  justify-items: center;
   grid-template-columns: 430px 1fr;
+  justify-items: center;
   gap: 25px;
   padding: 0 50px;
 }
@@ -238,14 +228,51 @@ body {
 }
 
 .about__title {
-  text-transform: uppercase;
-  font-size: 40px;
   margin: 100px 0;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .about__text {
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 25px;
+  font-size: 20px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 90px 50px;
+  font-size: 18px;
+}
+
+.footer__menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.footer__social-list-item {
+  width: 48px;
 }

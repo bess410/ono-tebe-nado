@@ -162,6 +162,7 @@ body {
 
 .lots__card-list-item {
   flex-basis: 430px;
+  flex-grow: 1;
   min-height: 450px;
   background: black;
 }

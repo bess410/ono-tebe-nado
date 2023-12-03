@@ -40,9 +40,14 @@
 }
 
 .header__address {
+  width: 240px;
   justify-self: end;
   font-style: normal;
   line-height: 135%;
+}
+
+.header__address span {
+  display: block;
 }
 
 /* Cover */
@@ -252,9 +257,14 @@
 }
 
 .footer__address {
+  width: 240px;
   justify-self: end;
   font-style: normal;
   line-height: 135%;
+}
+
+.footer__address span {
+  display: block;
 }
 
 .footer__menu-list {

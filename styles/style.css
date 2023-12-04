@@ -46,10 +46,6 @@
   line-height: 135%;
 }
 
-.header__address span {
-  display: block;
-}
-
 /* Cover */
 
 .cover {
@@ -261,10 +257,6 @@
   justify-self: end;
   font-style: normal;
   line-height: 135%;
-}
-
-.footer__address span {
-  display: block;
 }
 
 .footer__menu-list {
